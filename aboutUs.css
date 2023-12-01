@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Bahnschrift;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.whatsapp-contact-btn{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+.whatsapp-contact-btn button{
+    font-size: 2.2rem;
+    padding: 12px 17px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* navigation bar */
+
+nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 30px;
+    align-items: center;
+}
+
+.logo{
+    font-size: 1rem;
+}
+.input-entry{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.input-box{
+    width: 80%;
+    padding: 6px;
+    font-size: 1rem;
+}
+.submitbtn{
+    padding: 9px 8px;
+    font-size: .8rem;
+    color: white;
+    background-color: rgb(0, 110, 255);
+    border: none;
+    cursor: pointer;
+}
+.wishlist-cart{
+    display: flex;
+    gap: 10px;
+}
+.wishlist-cartbtn{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+    cursor: pointer;
+    padding: 9px 8px;
+    font-size: .8rem;
+    color: white;
+    background-color: rgb(0, 110, 255);
+    border: none;
+}
+
+.signup-btn{
+    cursor: pointer;
+    padding: 9px 9px;
+    font-size: .8rem;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+}
+
+/* Categories bar */
+
+.categories-locatebar ul{
+    list-style: none;
+    width: 70%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-block: 20px;
+    font-size: 1rem;
+    gap: 10%;
+    justify-content: center;
+}
+
+.categories-locatebar{
+    width: 100%;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.categories-locatebar ul li{
+    cursor: pointer;
+    transition: .2s ease-in ;
+    overflow: hidden;
+}
+
+.categories-locatebar ul li:hover{
+    scale: 1.07;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+
+/* Front of About us */
+.about-us-front{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-cont{
+    margin-block: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 80%;
+}
+.about-us{
+    font-size: large;
+    color: rgb(0, 110, 255);
+}
+.about-us-headline{
+    font-size: 6rem;
+    text-align: center;
+}
+.about-us-desc{
+    font-size: 1.3rem;
+}
+.about-us-img{
+    background-image: url(Images/minimalist-blue-circles-world-map-o10olfvkq6l5hybc.jpg);
+    height: 400px;
+    width: 100%;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.about-contact-us{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+}
+.about-contact-bg{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Press mentions */
+.press-mentions-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-block: 30px;
+    background-color: rgb(224, 238, 255);
+}
+
+.mentions-inside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-block: 50px;
+
+}
+
+.press-mentions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.press-mentions div{
+    width: 280px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+.press1{
+    background-image: url(https://seeklogo.com/images/F/forbes-logo-E05A21DD35-seeklogo.com.png);
+}
+.press2{
+    background-image: url(https://seeklogo.com/images/G/gizmodo-logo-9AC0C54418-seeklogo.com.png);
+}
+.press3{
+    background-image: url(https://seeklogo.com/images/B/bloomberg-logo-4753F8472E-seeklogo.com.png);
+}
+.press4{
+    background-image: url(https://seeklogo.com/images/T/techcrunch-logo-47CEBAA8A2-seeklogo.com.png);
+}
+.press5{
+    background-image: url(https://seeklogo.com/images/T/techradar-logo-2349EA4BCA-seeklogo.com.png);
+}
+
+.fullpage_container{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    margin-block: 40px;
+}
+.left-image{
+    width:40%;
+    flex-shrink: 0;
+}
+
+img{
+    height: 600px;
+}
+.right-text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-shrink: 0;
+    width: 40%;
+}
+.Grey-para{
+    color: grey;
+}
+.Heading{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-size: large;
+
+}
+.since_1889{
+    margin-bottom: 1rem;
+}
+
+/* About us Dialogue box */
+
+.dialogue-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(224, 238, 255);
+}
+.dialogue-in-container{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.lhs-cont{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+}
+.lhs-cont h2{
+    font-size: 4rem;
+    color: rgb(95, 95, 95);
+}
+.rhs-cont{
+    display: flex;
+    width: 40%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.Dialogue_box{
+    background-color: rgb(0, 110, 255);
+    margin-block: 60px;
+    /* width: max-content; */
+    height: auto;
+    width: 500px;
+    padding:2.5em 2em;
+    text-align: center;
+    border-radius: 16px;
+}
+.Dialogue_box h3{
+    color: white;
+    font-size:1.5rem;
+    margin-bottom: .5em;
+}
+.Dialogue_box p{
+    color: white;
+    margin-bottom: 3em;
+    font-size: 1em;
+}
+.Input{
+    padding: 0.5em;
+    border-radius: 6px;
+    border: 1px solid white;
+    font-size: large;
+    width: 255px;
+    margin-bottom: 2em;
+}
+
+.btn{
+    padding:.7em;
+    width:255px;
+    background-color:rgb(32, 32, 32);
+    font-size: larger;
+    color: white;
+    cursor: pointer;
+    margin-top: 1.4vh;
+    margin-bottom: 1vh;
+  border-radius:6px;
+}
+/* Footer of the page */
+
+footer{
+    gap: 20px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    color: white;
+    padding-block: 40px;
+    gap: 50px;
+}
+
+.upper-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20%;
+}
+.upper-footer div li{
+    list-style: none;
+}
+.upper-footer div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+.upper-footer div li:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+.lower-footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.lower-footer h2{
+    font-size: 2rem;
+}
+.social-media{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}

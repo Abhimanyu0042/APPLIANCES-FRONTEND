@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill your Delivery Details</title>
+    <link rel="icon" type="image/x-icon" href="/images/store.png">
+    <link rel="stylesheet" href="DeliveryDetails.css">
+    <script src="https://kit.fontawesome.com/5c324d89d4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <body>
+        <div class="container">
+            <div class="sticky-header">
+                <nav>
+                    <div class="logo">
+                        <h2>A P P L I A N C E S</h2>
+                    </div>
+                    <div class="input-entry">
+                        <input type="text" name="" class="input-box" />
+                        <input type="submit" class="submitbtn" value="Search" />
+                    </div>
+                    <div class="wishlist-cart">
+                        <button class="wishlist-cartbtn WhishListButton">
+                            <i class="fa-regular fa-heart"></i> Wishlist
+                        </button>
+                        <button class="wishlist-cartbtn"><a href="payment.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a></button>
+
+                        <button class="signup-btn">
+                            <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                        </button>
+                    </div>
+                </nav>
+                <div class="categories-locatebar">
+                    <ul>
+                        <span onclick="openNav()" class="navigate-in"><i class="fa-solid fa-bars"></i></span>
+                        <li><a href="index.html">Home</a></li>
+                        <li>Shop</li>
+                        <li><a href="aboutUs.html">About Us</a></li>
+                        <li><a href="category.html">Categories</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+    <div id="myNav" class="overlay">
+    
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <div class="overlay-content">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="payment.html">Cart</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="category.html">Categories</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </div>
+    
+      
+      </div>
+
+      <div id="overlay-cont" class="overlay-cont">
+        <div class="order-confirmed">
+            <img src="Images/icons8-tick-box.gif" alt="">
+            <h2>Thanks for your order</h2>
+            <p class="order-email-sent">The order confirmation has been sent to <span id="email-order">abc@gmail.com</span></p>
+            <hr>
+            <div class="confirmation-details">
+                <h3>Transaction Date</h3>
+                <p id="real-time-date">Thursday, November 17, 2022(GMT +7)</p>
+            </div>
+            <hr>
+            <div class="confirmation-details">
+                <h3>Payment Method</h3>
+                <p id="pay-confirm-method">MasterCard ending with 7884</p>
+            </div>
+            <hr>
+            <div class="confirmation-details">
+                <h3>Shipping in</h3>
+                <p>Express Delivery (1-3 buniness days)</p>
+            </div>
+            <button class="continue-shopping" >Continue Shopping</button>
+        </div>
+    </div>
+      
+
+      <div class="overlay-cont2" id="overlay-cont2">
+        <div class="if-buy-now">
+            <div class="delivery-details">
+                <h2>Delivery Information</h2>
+                <div class="delivery-form">
+                    <div class="delivery-form-item">
+                        <label for="full-name">Name</label>
+                        <input type="text" id="full-name" name="full-name" placeholder="John Doe">
+                    </div>
+                    <div class="delivery-form-item">
+                        <label for="contact-number">Mobile Number</label>
+                        <input type="tel" name="contact-number" maxlength="10" placeholder="18000-18000">
+                    </div>
+                    <div class="delivery-form-item">
+                        <label for="email">Email</label>
+                        <input type="email" id="email-inp" name="email" placeholder="abc@gmail.com">
+                    </div>
+                    <div class="delivery-form-item">
+                        <label for="city-name">City</label>
+                        <input type="text" name="city-name" placeholder="Panchkula"> 
+                    </div>
+                    <div class="delivery-form-item">
+                        <label for="State">State</label>
+                        <input type="text" name="State" placeholder="Haryana">
+                    </div>
+                    <div class="delivery-form-item">
+                        <label for="zip-code">PIN</label>
+                        <input name="zip-code" type="text" pattern="\d*" maxlength="6" placeholder="160062">
+                    </div>
+                    <div class="delivery-form-item1">
+                        <label for="address">Address</label>
+                        <input type="text" name="address" placeholder="4796 Libby Street">
+                    </div>
+                </div>
+            </div>
+            <div class="schedule-delivery">
+                <h2>Schedule Delivery</h2>
+                <div class="schedule-delivery-form">
+                    <div class="delivery-form-item1">
+                        <label for="Date">Date</label>
+                        <input type="date" name="Date" placeholder="07-08-2023">
+                    </div>
+                    <div class="delivery-form-item1">
+                        <label for="note">Note</label>
+                        <textarea name="note" id="" cols="30" rows="3" placeholder="Type your note"></textarea>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="Payment-method">
+                <h2>Payment Method</h2>
+                <div class="payment-method-option">
+                    <label>
+                        <input type="radio" class="radio" value="Online-Payment" id="paymentMethod" name="paymentMethod" />Online Payment</label>
+                        <label>
+                            <input type="radio" class="radio" value="Cash-on-Delivery" name="paymentMethod" id="paymentMethod" />Cash on Delivery</label>
+                            <label>
+                                <input type="radio" class="radio" value="Pay-on-Shipping" name="paymentMethod" id="paymentMethod" />POS on Delivery</label>
+                </div>
+            </div>
+            
+        </div>
+        <div class="order-summary">
+            <h3 >Payment</h3>
+            <div class="card-details">
+			<form>
+				Accepted Card <br>
+				<img src="Images/card1.png" width="100">
+				<img src="Images/card2.png" width="50">
+				<br><br>
+
+				Credit card number
+			<input type="text" name="" id="card-number" placeholder="Enter card number">
+				
+				Exp month
+				<input type="text" name="" placeholder="Enter Month">
+				<div id="zip">
+					<label>
+						Exp year
+						<select>
+							<option>Choose Year..</option>
+							<option>2022</option>
+							<option>2023</option>
+							<option>2024</option>
+							<option>2025</option>
+						</select>
+					</label>
+						<label>
+						CVV
+						<input type="number" name="" placeholder="CVV">
+					</label>
+				</div>
+			</form>
+			<input id="proceed-to-checkout" class="payment-Submit" type="submit" name="" value="Proceed to Checkout">
+            <br>
+            <!-- <p>&</p> -->
+            <input class="payment-Submit2" id="ConfirmOrderNow" type="button" value="Confirm Order">
+        </div>
+
+        <!-- <div class="pic-delivery-details">
+
+        </div> -->
+		</div>
+    
+        </div>
+    </div>
+    
+            
+            <footer>
+                <div class="footer-container">
+                    <div class="upper-footer">
+                        <div>
+                            <li>Contact Us</li>
+                            <li>About Us</li>
+                            <li>Be a Seller</li>
+                            <li>Corporate Information</li>
+                            <li>FAQ</li>
+                        </div>
+                        <div>
+                            <li>Payments</li>
+                            <li>Shipping</li>
+                            <li>Cancellation & Returns</li>
+                            <li>Report Infringement</li>
+                            <li>Security</li>
+                        </div>
+                        <div>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Youtube</li>
+                            <li class="social-media">
+                                <i class="fa-solid fa-envelope"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="lower-footer">
+                        <h2>A P P L I A N C E S</h2>
+                        <p>© 2022 Appliances, Inc.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="DeliveryDetails.js"></script>
+    </body>
+</body>
+</html>

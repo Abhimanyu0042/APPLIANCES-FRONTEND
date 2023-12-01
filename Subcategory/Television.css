@@ -1,0 +1,629 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Bahnschrift;
+}
+
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.whatsapp-contact-btn{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+.video-contact-btn{
+    position: fixed;
+    bottom: 8rem;
+    right: 2rem;
+}
+.whatsapp-contact-btn button{
+    font-size: 2.2rem;
+    padding: 12px 17px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.video-contact-btn button{
+    font-size: 2rem;
+    padding: 12px 17px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.sticky-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    background-color: white;
+    /* z-index: 10;   
+    position: sticky; */
+    
+}
+/* navigation bar */
+
+nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 30px;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    font-size: 1rem;
+    color: black;
+}
+.input-entry{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.input-box{
+    width: 80%;
+    padding: 6px;
+    font-size: 1rem;
+}
+.submitbtn{
+    padding: 9px 8px;
+    font-size: .8rem;
+    color: white;
+    background-color: rgb(0, 110, 255);
+    border: none;
+    cursor: pointer;
+}
+.wishlist-cart{
+    display: flex;
+    gap: 10px;
+}
+.wishlist-cartbtn{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+    cursor: pointer;
+    padding: 9px 8px;
+    font-size: .8rem;
+    color: white;
+    background-color: rgb(0, 110, 255);
+    border: none;
+}
+
+.signup-btn{
+    cursor: pointer;
+    padding: 9px 9px;
+    font-size: .8rem;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+}
+
+/* Categories bar */
+
+.categories-locatebar ul{
+    list-style: none;
+    width: 70%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-block: 20px;
+    font-size: 1rem;
+    gap: 10%;
+    justify-content: center;
+}
+
+.categories-locatebar{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.categories-locatebar ul li{
+    cursor: pointer;
+    transition: .2s ease-in ;
+    overflow: hidden;
+}
+
+.categories-locatebar ul li:hover{
+    scale: 1.07;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.categories-panel{
+    height: 550px;
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+/* Reveal on scroll classes */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.alive{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Main page starting */
+.video-banner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+video{
+    border-radius: 0px;
+}
+.video-img-adv{
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.video-img{
+    background-image: url(https://m.media-amazon.com/images/I/71S8qt+K8hL._SL1500_.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: 90%;
+    width: 400px;
+}
+.video-img-desc{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* align-items: center; */
+    justify-content: center;
+    width: 400px;
+    gap: 10px;
+    height: 100%;
+}
+.video-img-desc img{
+    width: 30%;
+    /* margin-bottom: 30px; */
+    border: 2px solid blue;
+}
+
+/* Image Carousel */
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Shop by Brand component */
+
+.shop-by-brand{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+.shop-by-brand h2{
+    width: 78%;
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+}
+.brand-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 80%;
+}
+
+.brand-box div{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    border: 2px solid gainsboro;
+    width: 230px;
+    height: 180px;
+    transition: .2s ease;
+}
+.brand1{
+    background-image: url(https://www.reliancedigital.in/medias/Samsung-Logo-final.jpg?context=bWFzdGVyfGltYWdlc3w0NTIyfGltYWdlL2pwZWd8aW1hZ2VzL2gzZS9oZmUvOTQ2MjEzODE0Mjc1MC5qcGd8ZDA4YWRhMTQ0N2E0MTQ5ZDY1ZTNmZDgzNmZiNWQxY2YzZTQxMGNjZDQyYzBiNzRkYzNiMzA5YzE3MGM3MDYwYg);
+}
+.brand2{
+    background-image: url(https://www.reliancedigital.in/medias/Smartphone-Shop-By-Brands-Mi.jpg?context=bWFzdGVyfGltYWdlc3w1MjUzfGltYWdlL2pwZWd8aW1hZ2VzL2hmMC9oMTEvOTg3MjM5MjAyODE5MC5qcGd8ZGJlNGVhMjM1NjBiZDYwMDQzN2ZlMWFjZWI1NzM5YTY2ZGU3YmI0OWZlNWFhMGE5OTYzMjI5NTk0ZWVhYWI2Mw);
+}
+.brand3{
+    background-image: url(https://www.reliancedigital.in/medias/Toshiba-Logo.jpg?context=bWFzdGVyfGltYWdlc3w0MzY0fGltYWdlL2pwZWd8aW1hZ2VzL2g3ZC9oYmIvOTk4ODU5MTE5MDA0Ni5qcGd8MDUyNGFhMjc1MTkwYzliZGY1MGZkMDg2MTIwOGRhNzMwYWQxMzhjNjk0YTc0ZDM3MDViMzM4NjVkMTU4ZDA1NQ);
+}
+.brand4{
+    background-image: url(https://www.reliancedigital.in/medias/Oneplus-logo-150-x-80.jpg?context=bWFzdGVyfGltYWdlc3wyNDM0fGltYWdlL2pwZWd8aW1hZ2VzL2hjYi9oNjkvOTMzMTUwNDYxMTM1OC5qcGd8ZGY2NGYzZjE4Mjk4ZDJlMGU0NzNiMjk4YWY1MWRkYzg4NmVkMWVkNDQ1MDM2NWQ5N2QyYjFkYzA4MDA0YmNhOQ);
+}
+.brand5{
+    background-image: url(https://www.reliancedigital.in/medias/Karbonn.jpg?context=bWFzdGVyfGltYWdlc3w2MDMyfGltYWdlL2pwZWd8aW1hZ2VzL2g5ZS9oMTQvOTg2Njc1NzI0MjkxMC5qcGd8MjZkOTZlYjg2ZDM1YzM1MzRiMjM3MjJkYTJhOWRmNGRlNzczZDBkNWIwMDRiOGI0MzIzMTdkMDZiMTE1YzhjYg);
+}
+.brand6{
+    background-image: url(https://www.reliancedigital.in/medias/Realme.jpg?context=bWFzdGVyfGltYWdlc3w3MzY3fGltYWdlL2pwZWd8aW1hZ2VzL2hlMC9oOGIvOTg2MjQzODAyNzI5NC5qcGd8NDBmNjc3MTg5ZDA3ODdiY2VhZWQ1ZjBmMjNlZmIxNmVkMTZkN2IyMWQyY2Q2ZDBlNDM5NmU0ODRmNDg0YzdiYQ);
+}
+.brand7{
+    background-image: url(https://www.reliancedigital.in/medias/LG-Logo.jpg?context=bWFzdGVyfGltYWdlc3w3NDk0fGltYWdlL2pwZWd8aW1hZ2VzL2g3Mi9oZDMvOTA5MTIxMDExNzE1MC5qcGd8NDdjM2UxZTU5MmQyNzc0MzE0MjljZGY2OTM2OTRlMWY1ZjdmNTEwNmRhZDM3OWJlZDUyN2RlMDA2ZTczNzg5OQ);
+}
+.brand8{
+    background-image: url(https://www.reliancedigital.in/medias/Sony-Logo.png?context=bWFzdGVyfGltYWdlc3wzODE2fGltYWdlL3BuZ3xpbWFnZXMvaGNlL2g1Mi85MjUyOTMyMzIxMzEwLnBuZ3wyZDg0MzA3N2Q3MWRlZmIwNjM4ZmQxZGIyNGIxMWQ2YjRmOGY0ZDFkMTVhOGY4OGY1YjhkODRlMjExOWViNDRm);
+}
+.brand9{
+    background-image: url(https://www.reliancedigital.in/medias/iffalcon-150-x-80.jpg?context=bWFzdGVyfGltYWdlc3w4MTc4fGltYWdlL2pwZWd8aW1hZ2VzL2g1Yy9oZmQvOTMxMDcxMDA3MTMyNi5qcGd8OTBlNTUxY2VjZjUzNmFiMTk4Y2YwYWQwZTg5ODNhZmM1ZjJhYmJiNGU1N2ViYjc2MTFjZjc4OGZiNmNhODY4MQ);
+}
+.brand10{
+    background-image: url(https://www.reliancedigital.in/medias/Shop-By-Brands-Hisense.jpg?context=bWFzdGVyfGltYWdlc3w2ODc3fGltYWdlL2pwZWd8aW1hZ2VzL2hiMi9oODEvOTQ0NjA1MTgwNzI2Mi5qcGd8YjA1ZTEzYjBhOWZmMzA1Y2Q0NTA1NmZmNzI1MTI3YTBjMDZhYjU4NTRmNTFkYjBkODY1NGE4YTA3MjMyNjQwOA);
+}
+.brand11{
+    background-image: url(https://www.reliancedigital.in/medias/TCL.jpg?context=bWFzdGVyfGltYWdlc3w2NjA5fGltYWdlL2pwZWd8aW1hZ2VzL2g5Zi9oMTMvOTg1Nzg2MzYxNDQ5NC5qcGd8MzE2MTkwMjhlMTYxNGNiMWMwYjY2NmY3NjRkNmEzZDI4NThlMTI5ZTJkOTViYTlkMzlhYWI2MDY1ZTRlNWM5YQ);
+}
+.brand12{
+    background-image: url(https://www.reliancedigital.in/medias/Shop-By-Brands-Sansui-02.jpg?context=bWFzdGVyfGltYWdlc3w0Nzc3fGltYWdlL2pwZWd8aW1hZ2VzL2g4Yy9oOTQvOTQ2ODA4MTczMzY2Mi5qcGd8NzJhNjk0NTBiODE3MzU0NTkyOTViOTQ4OTg1YWJlZmVlYWI3ODc0NzQ4MWNiOTIxZTY2MWZjYmZhZjUxNTBjMg);
+}
+.brand-box div:hover{
+    scale: .95;
+    cursor: pointer;
+}
+
+/* Deals */
+.highlighting-deals-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 243, 252);
+    margin-block: 50px;
+    padding-bottom: 50px;
+}
+.highlighting-deals-container  h2{
+    margin-block: 20px;
+    font-size: 1.8rem;
+    align-self: flex-start;
+    margin-left:  10%;
+}
+
+.highlighting-deals{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* overflow: auto; */
+    /* overflow: hidden; */
+    width: 80%;
+    gap: 15px;
+}
+
+.student-viewing-sugg{
+    height: 390px;
+    width: 295px;
+    flex-shrink: 0;
+    display: flex;
+    color: black;
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: ease-out;
+    transition-duration: .2s;
+}
+
+
+.student-text{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.pricing-student-text span{
+    text-decoration:line-through;
+    color:rgb(80, 80, 80);
+}
+.heading-student-text{
+    font-weight: bold;
+}
+.student-sugg-pic{
+    width: 275px;
+    height: 275px;
+    display: flex;
+    align-items: center;
+    transition: ease-out;
+    transition-duration: .2s;
+    overflow: hidden;
+}
+
+.student-sugg-pic:hover{
+    scale: 1.08; 
+    overflow: hidden;   
+}
+.student-sugg-pic img{
+    object-position: center;
+    width: 275px;
+    overflow: hidden;
+    aspect-ratio: auto;
+    scale: 90%;
+}
+
+.hdc2{
+    background-color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.svs2{
+    border: 1px solid gainsboro;
+}
+
+/* .student-sugg-pic:hover{
+    transition:ease-in;
+    transition-duration: .2s;
+    scale: 1.02;
+    cursor: pointer;
+} */
+
+.name-student-text{
+    color:rgb(255, 0, 0);
+    font-size: .9rem;
+    padding-top: 4px;
+} 
+.rating-student-text{
+    color: rgb(234, 189, 29);
+    font-weight: bold;
+}
+.bestseller{
+    color: rgb(132, 132, 38);
+    font-size: small;
+    margin-top: .5rem;
+    padding: .1rem .5rem;
+    font-weight: bold;
+    width: fit-content;
+    background-color: rgba(224, 224, 117, 0.827);
+}
+
+/* Explore more */
+
+.explore-more{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.explore-more-header{
+    margin-block: 20px;
+    font-size: 1.8rem;
+    width:80%;
+    align-self: flex-start;
+    margin-left:  10%;
+}
+.explore-boxes{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid gainsboro;
+    /* border-radius: 15px; */
+    background-size: 85%;
+    height: 350px;
+    width: 300px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column-reverse;
+    transition: .2s ease;
+}
+/* .explore-boxes:hover{
+    scale: 1.05;
+} */
+.explore-more-inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    gap: 15px;
+}
+.explore-pc1{
+    background-image: url(https://m.media-amazon.com/images/I/81MRU+3RJLL._SL1500_.jpg);
+}
+.explore-pc2{
+    background-image: url(https://m.media-amazon.com/images/I/71mfkY78bUL._SL1500_.jpg);
+}
+.explore-pc3{
+    background-image: url(https://m.media-amazon.com/images/I/81wxS8abrgL._SL1500_.jpg);
+}
+.explore-pc4{
+    background-image: url(https://m.media-amazon.com/images/I/81UT46-gwRL._SL1500_.jpg);
+}
+.explore-pc5{
+    background-image: url(https://m.media-amazon.com/images/I/714OTuxxnfL._SL1500_.jpg);
+}
+.explore-pc6{
+    background-image: url(https://m.media-amazon.com/images/I/71oeLYE-BOL._SL1500_.jpg);
+}
+.explore-pc7{
+    background-image: url(https://m.media-amazon.com/images/I/81OnFolEvpL._SL1500_.jpg);
+}
+.explore-pc8{
+    background-image: url(https://m.media-amazon.com/images/I/61J9i9saB+L._SL1090_.jpg);
+}
+
+.explore-desc{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-image: linear-gradient(to top,rgb(0, 0, 0),black,rgb(0, 0, 0, 0));
+    padding: 100px 15px 28px 15px;
+    gap: 5px;
+}
+
+.explore-desc h2{
+    font-size: 1.3rem;
+}
+.change-on-hover{
+    opacity: 0;
+    transition: .4s ease-in-out;
+}
+
+.change-on-hover:hover{
+    opacity: 1;
+}
+
+.explore-desc p{
+    font-size: 1.4rem;
+    /* font-weight: 800; */
+    padding-block: 10px;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color: rgba(207, 207, 207, 0.913);
+}
+
+.explore-desc div{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+.explore-desc div button{
+    padding: 10px 8px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2px;
+}
+.explore-desc div button:hover{
+    cursor: pointer;
+}
+.buy-now{
+    color: white;
+    background-color: rgb(0, 110, 255);
+}
+.add-to-cart{
+    background-color: white;
+    color: black;
+}
+
+
+/* Footer */
+footer{
+    gap: 20px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    color: white;
+    padding-block: 40px;
+    gap: 50px;
+}
+
+.upper-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20%;
+}
+.upper-footer div li{
+    list-style: none;
+}
+.upper-footer div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+.upper-footer div li:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+.lower-footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.lower-footer h2{
+    font-size: 2rem;
+}
+.social-media{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}

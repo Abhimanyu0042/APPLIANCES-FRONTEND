@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appliances - Apple iPhone 14 Pro Max</title>
+    <link rel="stylesheet" href="SmartphoneProduct.css" />
+    <link rel="icon" type="image/x-icon" href="/images/store.png">
+    <script src="https://kit.fontawesome.com/5c324d89d4.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="whatsapp-contact-btn"><button><i class="fa-brands fa-whatsapp"></i></button></div>
+<div class="sticky-header">
+    <nav>
+        <div class="logo">
+            <h2>A P P L I A N C E S</h2>
+        </div>
+        <div class="input-entry">
+                <input type="text" name="" class="input-box">
+                <input type="submit" class="submitbtn" value="Search">
+        </div>
+        <div class="wishlist-cart">
+            <button class="wishlist-cartbtn"><i class="fa-regular fa-heart"></i> Wishlist</button>
+            <button class="wishlist-cartbtn"><a href="/payment.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a></button>
+            <button class="signup-btn"><a href="/login.html"><i class="fa-solid fa-user"></i></a></button>
+        </div>
+      </nav>
+      <div class="categories-locatebar">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li>Shop</li>
+            <li><a href="/aboutUs.html">About Us</a></li>
+            <li><a href="/category.html">Categories</a></li>
+            <li><a href="/contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+</div>
+
+<marquee class="blink" scrollamount="12">Use <span>summerbonanza</span> coupon code to get &#8377;1,299 discount on your order. One time use only</marquee>
+
+<div id="overlay-cont" class="overlay-cont">
+    <div class="if-in-cart">
+        <img src="/Images/undraw_faq_re_31cw.svg" alt="">
+        <p>Please confirm, Do you really want to add <br>this item in cart ?</p>
+        <div class="overlay-button"><button id="yes-btn-overlay" class="yes-btn-overlay">Yes!</button> <button onclick="closeOverlay()" id="no-btn-overlay" class="no-btn-overlay">Nop!</button></div>
+    </div>
+</div>
+
+<div class="overlay-cont2" id="overlay-cont2">
+    <div class="if-buy-now">
+        <div class="delivery-details">
+            <h2>Delivery Information</h2>
+            <div class="delivery-form">
+                <div class="delivery-form-item">
+                    <label for="full-name">Name</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="John Doe">
+                </div>
+                <div class="delivery-form-item">
+                    <label for="contact-number">Mobile Number</label>
+                    <input type="tel" name="contact-number" maxlength="10" placeholder="18000-18000">
+                </div>
+                <div class="delivery-form-item">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="abc@gmail.com">
+                </div>
+                <div class="delivery-form-item">
+                    <label for="city-name">City</label>
+                    <input type="text" name="city-name" placeholder="Panchkula"> 
+                </div>
+                <div class="delivery-form-item">
+                    <label for="State">State</label>
+                    <input type="text" name="State" placeholder="Haryana">
+                </div>
+                <div class="delivery-form-item">
+                    <label for="zip-code">PIN</label>
+                    <input name="zip-code" type="text" pattern="\d*" maxlength="6" placeholder="160062">
+                </div>
+                <div class="delivery-form-item1">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" placeholder="4796 Libby Street">
+                </div>
+            </div>
+        </div>
+        <div class="schedule-delivery">
+            <h2>Schedule Delivery</h2>
+            <div class="schedule-delivery-form">
+                <div class="delivery-form-item1">
+                    <label for="Date">Date</label>
+                    <input type="date" name="Date" placeholder="07-08-2023">
+                </div>
+                <div class="delivery-form-item1">
+                    <label for="note">Note</label>
+                    <textarea name="note" id="" cols="30" rows="3" placeholder="Type your note"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="Payment-method">
+            <h2>Payment Method</h2>
+            <div class="payment-method-option">
+                <!-- <label>
+                    <input type="radio" class="radio" value="Online-Payment" name="paymentMethod" />Online Payment</label> -->
+                    <label>
+                        <input type="radio" class="radio" value="cod" name="paymentMethod" />Cash on Delivery</label>
+                        <label>
+                            <input type="radio" class="radio" value="pos" name="paymentMethod" />POS on Delivery</label>
+            </div>
+        </div>
+        
+    </div>
+    <div class="order-summary">
+        <h2>Order Summary</h2>
+        <div class="cart">
+            <div class="cart-item">
+                <div class="cart-detailswithpic">
+                    <div class="cart-detailswithpic1" >
+                        <div id="cart-pic" class="cart-pic"></div>
+                        <div class="cart-details">
+                            <h3 id="cart-item-title">Portable shit</h3>
+                            <p id="cart-item-id">random-id</p>
+                            <p id="cart-itemprice">&#8377;<span id="cart-item-price">1,49,999</span></p>
+                        </div>
+                    </div>
+                    <p id="item-quantity" class="item-quantity">1</p>
+                </div>
+            </div>
+
+            <div class="order-total">
+                <div class="discount-cpn">
+                    <input id="coupon-inp" type="text" placeholder="Enter coupon code">
+                    <button id="cpn-btn">Apply</button>
+                </div>
+                <hr>
+                <div class="order-total-content">
+                    <p class="order-sub">Subtotal</p>
+                    <p id="ordersubtotal">&#8377;<span id="order-subtotal">1,23,999</span></p>
+                </div>
+                <div class="order-total-content">
+                    <p class="order-sub">Shipping</p>
+                    <p id="order-Shipping">&#8377; 40</p>
+                </div>
+                <div class="order-total-content">
+                    <p class="order-sub">Discount (if any)</p>
+                    <p>&#8377; <span id="order-disc">0</span></p>
+                </div>
+                <hr>
+                <div class="order-total-content">
+                    <p class="order-sub">Total(INR)</p>
+                    <p >&#8377;<span id="order-total">1,23,999</span></p>
+                </div>
+                <button id="confirm-order" class="confirm-order" type="submit">Confirm Order</button>
+            </div>
+        </div>
+
+    </div>
+    <p class="closeBtn" onclick="closeOverlay2()" >&times;</p>
+</div>
+
+<div class="product-page">
+    <div id="lhs-pic-cont" class="lhs-pic-cont">
+        <div class="change-pic">
+            <button id="leftpicchange">◀</button>
+            <button id="rightpicchange">▶</button>
+        </div>
+    </div>
+    <div class="rhs-product-cont">
+        <h1 class="product-title reveal" id="product-title">Apple iPhone 14 Pro Max (256 GB) - <br>Gold</h1>
+        <p class="product-price reveal">&#8377; <span id="product-cost"> 1,37,999 </span> <span class="original-price">&#8377;1,49,999</span></p>
+        <p class="product-description reveal">iPhone 14 Pro Max is based on iOS 16 and packs 128GB, 256GB, 512GB, 1TB of inbuilt storage. The iPhone 14 Pro Max measures 160.70 x 77.60 x 7.85mm (height x width x thickness) and weighs 240.00 grams. It was launched in Space Black, Silver, Gold, and Deep Purple colours. It features an IP68 rating for dust and water protection.
+        </p>
+        <div class="quantity-button reveal">
+            <button id="diff" class="diff">-</button>
+            <h1 class="inp-quantity" id="inp-quantity">1</h1>
+            <button id="add" class="add">+</button>
+        </div>
+
+        <div class="buttons-rhs reveal">
+            <button id="add-cartbtn" class="add-cartbtn">ADD TO CART</button>
+            <button id="buynowbtn" class="buynowbtn">BUY NOW</button>
+        </div>
+
+
+        <hr>
+
+        <li>This product is made to order and is typically takes 3-4 working days. Cash on delivery is available on this product, however availability is on first come basis.</li>
+        <li>Some products are not eligible for cancellations or returns. Read our Return Policy carefully.</li>
+    </div>
+</div>
+
+    <div class="video-banner">
+        <video autoplay muted loop width="40%" height="10%" src="/Images/iPhone 14 Pro, Pro Max introduction.mp4"></video>
+    </div>
+
+<div class="product-specs">
+    <h1 class="reveal">About this item</h1>
+        <ul class="reveal">
+            <li>17.00 cm (6.7-inch) Super Retina XDR display featuring Always-On and ProMotion</li>
+            <li>Dynamic Island, a magical new way to interact with iPhone
+            </li>
+            <li>48MP Main camera for up to 4x greater resolution
+            </li>
+            <li>Cinematic mode now in 4K Dolby Vision up to 30 fps
+            </li>
+            <li>Action mode for smooth, steady, handheld videos
+            </li>
+            <li>All-day battery life and up to 29 hours of video playback
+            </li>
+            <li>Vital safety technology — Crash Detection can detect a severe car crash and call for help</li>
+            <li>A16 Bionic, the ultimate smartphone chip. Superfast 5G cellular
+            </li>
+        </ul>
+        <div class="img-specs reveal">
+            <img src="https://m.media-amazon.com/images/I/91wGCiIAniL._SX679_.jpg" alt="" srcset="">
+            <img src="https://m.media-amazon.com/images/I/61clO95EgwL._SX679_.jpg" alt="" srcset="">
+        </div>
+</div>
+
+<div class="customer-reviews">
+    <h1>Customer reviews</h1>
+    <div class="input-review-box">
+        <input type="text" name="" class="rating-inp user-name" placeholder="Write your name" id="user-name">
+        <select id="ratings"  placeholder="Give your rating here" class="rating-inp">
+            <option value="1">⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="5">⭐⭐⭐⭐⭐</option>
+        </select>
+        <input type="text" class="review-inp" id="review-inp" placeholder="Write your thoughts on the product here.....">
+        <button id="post-review" class="post-review">Post</button>
+    </div>
+    <div class="review-box" id="review-box">
+        <div class="comments reveal">
+            <div class="user-details"> <div class="profile-pc" id="profile-pc">A</div> <p class="user-name">Arjun Bawa</p> </div>
+            <p class="review">Was skeptical buying this device.. once the device was out for delivery… delivery agent called immediately. Reached my house in 20mins. I checked the seal and packing of the device.. powered it on and matched the imei and serial numbers. So far good. Really happy.</p>
+            <hr>
+            <p><span class="ratings">⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+      <footer>
+        <div class="footer-container">
+        <div class="upper-footer">
+            <div>
+                <li>Contact Us</li>
+                <li>About Us</li>
+                <li>Be a Seller</li>
+                <li>Corporate Information</li>
+                <li>FAQ</li>
+            </div>
+            <div>
+                <li>Payments</li>
+                <li>Shipping</li>
+                <li>Cancellation & Returns</li>
+                <li>Report Infringement</li>
+                <li>Security</li>
+            </div>
+            <div>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Youtube</li>
+                <li class="social-media"><i class="fa-solid fa-envelope"></i> <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-twitter"></i></li>
+            </div>
+
+        </div>
+        <div class="lower-footer">
+            <h2>A P P L I A N C E S</h2>
+            <p>© 2022 Appliances, Inc.</p>
+        </div>
+    </div>
+      </footer>
+
+    </div>
+    <script src="SmartphoneProduct.js"></script>
+  </body>
+</html>

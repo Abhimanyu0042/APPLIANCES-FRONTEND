@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appliances-Your Shopping Bag</title>
+    <link rel="stylesheet" href="payment.css" />
+    <link rel="icon" type="image/x-icon" href="/images/store.png">
+    <script src="https://kit.fontawesome.com/5c324d89d4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sticky-header">
+            <nav>
+                <div class="logo">
+                    <h2>A P P L I A N C E S</h2>
+                </div>
+                <div class="input-entry">
+                    <input type="text" name="" class="input-box" />
+                    <input type="submit" class="submitbtn" value="Search" />
+                </div>
+                <div class="wishlist-cart">
+                    <button class="wishlist-cartbtn WhishListButton">
+                        <i class="fa-regular fa-heart"></i> Wishlist
+                    </button>
+                    <button class="wishlist-cartbtn WhishListButton" >
+                        <i class="fa-solid fa-cart-shopping"></i> Cart
+                    </button>
+                    <button class="signup-btn">
+                        <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                    </button>
+                </div>
+            </nav>
+            <div class="categories-locatebar">
+                <ul>
+                    <span onclick="openNav()" class="navigate-in"><i class="fa-solid fa-bars"></i></span>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Shop</li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="category.html">Categories</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="myNav" class="overlay">
+
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+    <div class="overlay-content">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="payment.html">Cart</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
+        <li><a href="category.html">Categories</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </div>
+
+  
+  </div>
+  
+
+        <div class="cartImage">
+            <div class="banner-desc">
+                <h3>
+                    आपका शुक्रिया FOR<br />
+                    SHOPPING WITH US<br />😁 😉 😍 🤗
+                </h3>
+            </div>
+        </div>
+
+        <div class="overlay-cont2" id="overlay-cont2">
+            <div class="if-buy-now"></div>
+            <div class="order-summary">
+                <h2>Shopping Cart</h2>
+                <div class="cart">
+                    <div>
+                        <div class="cart-item">
+                            <div class="cart-detailswithpic">
+                                <div class="cart-detailswithpic1">
+                                    <div id="cart-pic" class="cart-pic pic1"></div>
+                                    <div class="cart-details">
+                                        <h3 id="cart-item-title">iPhone 14 Pro max</h3>
+                                        <p id="cart-item-id">#XY6543</p>
+                                    </div>
+                                </div>
+                                <p id="cart-itemprice">
+                                    &#8377;<span id="cart-item-price">1,49,999</span>
+                                </p>
+
+                                <p id="item-quantity" class="item-quantity">1</p>
+                                <button id="remove-btn" class="remove-btn">Remove</button>
+
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <div class="cart-detailswithpic">
+                                <div class="cart-detailswithpic1">
+                                    <div id="cart-pic" class="cart-pic pic2"></div>
+                                    <div class="cart-details">
+                                        <h3 id="cart-item-title">Samsung Galaxy Book2 Pro</h3>
+                                        <p id="cart-item-id">#XY6547</p>
+                                    </div>
+                                </div>
+                                <p id="cart-itemprice">
+                                    &#8377;<span id="cart-item-price">1,01,990</span>
+                                </p>
+
+                                <p id="item-quantity" class="item-quantity">1</p>
+                                <button id="remove-btn" class="remove-btn">Remove</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-total">
+                        <div class="discount-cpn">
+                            <input id="coupon-inp" type="text" placeholder="Enter coupon code" />
+                            <button id="cpn-btn">Apply</button>
+                        </div>
+                        <hr />
+                        <div class="order-total-content">
+                            <p class="order-sub">Subtotal</p>
+                            <p id="ordersubtotal">
+                                &#8377;<span id="order-subtotal">2,51,989</span>
+                            </p>
+                        </div>
+                        <div class="order-total-content">
+                            <p class="order-sub">Shipping</p>
+                            <p id="order-Shipping">&#8377; 40</p>
+                        </div>
+                        <div class="order-total-content">
+                            <p class="order-sub">Discount (if any)</p>
+                            <p>&#8377; <span id="order-disc">0</span></p>
+                        </div>
+                        <hr />
+                        <div class="order-total-content">
+                            <p class="order-sub">Total(INR)</p>
+                            <p>&#8377;<span id="order-total">2,52,029</span></p>
+                        </div>
+                        <button id="confirm-order" class="confirm-order" type="submit">
+                            <a href="/DeliveryDetails.html">Proceed</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                <div class="upper-footer">
+                    <div>
+                        <li>Contact Us</li>
+                        <li>About Us</li>
+                        <li>Be a Seller</li>
+                        <li>Corporate Information</li>
+                        <li>FAQ</li>
+                    </div>
+                    <div>
+                        <li>Payments</li>
+                        <li>Shipping</li>
+                        <li>Cancellation & Returns</li>
+                        <li>Report Infringement</li>
+                        <li>Security</li>
+                    </div>
+                    <div>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                        <li class="social-media">
+                            <i class="fa-solid fa-envelope"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </li>
+                    </div>
+                </div>
+                <div class="lower-footer">
+                    <h2>A P P L I A N C E S</h2>
+                    <p>© 2022 Appliances, Inc.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="payment.js"></script>
+</body>
+
+</html>

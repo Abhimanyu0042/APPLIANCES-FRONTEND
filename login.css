@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Bahnschrift;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.whatsapp-contact-btn{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+.whatsapp-contact-btn button{
+    font-size: 2.2rem;
+    padding: 12px 17px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* navigation bar */
+
+nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 30px;
+    align-items: center;
+}
+
+.logo{
+    font-size: 1rem;
+}
+.input-entry{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.input-box{
+    width: 80%;
+    padding: 6px;
+    font-size: 1rem;
+}
+.submitbtn{
+    padding: 9px 8px;
+    font-size: .8rem;
+    color: white;
+    background-color: rgb(0, 110, 255);
+    border: none;
+    cursor: pointer;
+}
+.wishlist-cart{
+    display: flex;
+    gap: 10px;
+}
+.wishlist-cartbtn{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+    cursor: pointer;
+    padding: 9px 8px;
+    font-size: .8rem;
+    color: white;
+    background-color: rgb(0, 110, 255);
+    border: none;
+}
+
+.signup-btn{
+    cursor: pointer;
+    padding: 9px 9px;
+    font-size: .8rem;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+}
+
+.container2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+}
+.lhs-panel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-image: url(2202_w039_n003_110b_p1_110.jpg);
+    background-size: cover;
+}
+.rhs-panel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.lhs-desc{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 3em 60px 3em 60px;
+    background-color: rgba(161, 224, 255, 0.292);
+    backdrop-filter: blur(5px);
+}
+
+.lhs-desc h1{
+    font-size: 4rem;
+    color: black;
+}
+
+.lhs-desc h1 span{
+    color: rgb(0, 110, 255);
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.rhs-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.rhs-heading h2{
+    font-size: 3rem;
+}
+.rhs-heading p{
+    color: gray;
+    font-size: .9rem;
+}
+label{
+    font-size: 1.1rem;
+}
+
+.inputs input{
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid rgb(220, 220, 220);
+}
+.inputs input:focus{
+    border: 1px solid rgb(220, 220, 220);
+}
+.form-check{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: .8rem;
+}
+.form-check p a{
+    color: blue;
+}
+.form-check p:hover{
+    text-decoration: underline;
+}
+.form-check label{
+    font-size: .95rem;
+}
+.form-submit input{
+    width: 100%;
+    font-size: .9rem;
+    padding: 10px;
+    background-image: linear-gradient(to right, rgb(62, 113, 252) , rgb(178, 229, 255));
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.form-submit input:hover{
+    cursor: pointer;
+    scale: 1.07;
+}
+
+.signin-google{
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    transition: .5s;
+
+}
+.signin-google:hover{
+    cursor: pointer;
+    scale: 1.07;
+}
+.Signup{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 40px;
+}
+.Signup a{
+    color: blue;
+    font-size: .9rem;
+}
+.Signup:hover{
+    text-decoration: underline;
+}
+
+
+/* Footer of the page */
+
+footer{
+    gap: 20px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    color: white;
+    padding-block: 40px;
+    gap: 50px;
+}
+
+.upper-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20%;
+}
+.upper-footer div li{
+    list-style: none;
+}
+.upper-footer div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+.upper-footer div li:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+.lower-footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.lower-footer h2{
+    font-size: 2rem;
+}
+.social-media{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}

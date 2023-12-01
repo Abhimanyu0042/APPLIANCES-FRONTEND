@@ -1,0 +1,654 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Bahnschrift;
+}
+
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.whatsapp-contact-btn{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+.video-contact-btn{
+    position: fixed;
+    bottom: 8rem;
+    right: 2rem;
+}
+.whatsapp-contact-btn button{
+    font-size: 2.2rem;
+    padding: 12px 17px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.video-contact-btn button{
+    font-size: 2rem;
+    padding: 12px 17px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.sticky-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    background-color: white;
+    /* z-index: 10;   
+    position: sticky; */
+    
+}
+/* navigation bar */
+
+nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 30px;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    font-size: 1rem;
+    color: black;
+}
+.input-entry{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.input-box{
+    width: 80%;
+    padding: 6px;
+    font-size: 1rem;
+}
+.submitbtn{
+    padding: 9px 8px;
+    font-size: .8rem;
+    color: white;
+    background-color: rgb(0, 110, 255);
+    border: none;
+    cursor: pointer;
+}
+.wishlist-cart{
+    display: flex;
+    gap: 10px;
+}
+.wishlist-cartbtn{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+    cursor: pointer;
+    padding: 9px 8px;
+    font-size: .8rem;
+    color: white;
+    background-color: rgb(0, 110, 255);
+    border: none;
+}
+
+.signup-btn{
+    cursor: pointer;
+    padding: 9px 9px;
+    font-size: .8rem;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+}
+
+/* Categories bar */
+
+.categories-locatebar ul{
+    list-style: none;
+    width: 70%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-block: 20px;
+    font-size: 1rem;
+    gap: 10%;
+    justify-content: center;
+}
+
+.categories-locatebar{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.categories-locatebar ul li{
+    cursor: pointer;
+    transition: .2s ease-in ;
+    overflow: hidden;
+}
+
+.categories-locatebar ul li:hover{
+    scale: 1.07;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.categories-panel{
+    height: 550px;
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+/* Reveal on scroll classes */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Main page starting */
+.video-banner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+video{
+    border-radius: 0px;
+}
+.video-img-adv{
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.video-img{
+    background-image: url(https://www.androidauthority.com/wp-content/uploads/2022/07/nothing-phone-1-glyph-on-rear-scaled.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: 130%;
+    width: 400px;
+}
+.video-img-desc{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* align-items: center; */
+    justify-content: center;
+    width: 400px;
+    gap: 10px;
+    height: 100%;
+}
+.video-img-desc img{
+    width: 50%;
+    margin-bottom: 30px;
+    /* height: 10%; */
+}
+/* Banner images of Smartphones and bank offers */
+.banners-club1{
+    background-image: url(https://www.reliancedigital.in/medias/Best-Selling-Smartphones-1365X260-.jpg?context=bWFzdGVyfGltYWdlc3wxNjQ0ODB8aW1hZ2UvanBlZ3xpbWFnZXMvaGYzL2gzNi8xMDAzMjIzNjg1NTMyNi5qcGd8OTk4NTVkYTI5ZWFkNTNmZDBhMTI1M2Q4MDExODIxYjMwZjIwZTNjZDEyMDYwMjdjOGVjZTI2Y2FjMjJhN2NhMQ);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banners-club2{
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/tiyesum/HDFC/Aug/HDFC_MOB_01.png);
+    width: 100%;
+    height: 300px;
+    background-size: 90%;
+    background-position: 90% 20%;
+    background-repeat: no-repeat;
+}
+
+/* Shop by Brand component */
+
+.shop-by-brand{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+.shop-by-brand h2{
+    width: 80%;
+    font-size: 2.2rem;
+    padding-bottom: 30px;
+}
+.brand-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    gap: 5px;
+}
+
+.brand-box div{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    width: 311px;
+    border: .5px solid rgba(128, 128, 128, 0.477);
+    padding-block: 100px;
+    transition: .2s ease;
+}
+.brand1{
+    background-image: url(https://www.reliancedigital.in/medias/Apple-Logo-final.jpg?context=bWFzdGVyfGltYWdlc3wxODc2fGltYWdlL2pwZWd8aW1hZ2VzL2g3ZS9oZTAvOTA5ODk0MTM2NjMwMi5qcGd8NmU2MDIzODlkODBiNzFlMWQzZDZhNjMxN2I1OTllM2VkMGVlZTVmNWQyZDgwMDA3MDU4MmFjODlhZDMyNTQ3Mw);
+}
+.brand2{
+    background-image: url(https://www.reliancedigital.in/medias/Smartphone-Shop-By-Brands-OnePlus.jpg?context=bWFzdGVyfGltYWdlc3wyNjQyfGltYWdlL2pwZWd8aW1hZ2VzL2hjNi9oNTUvOTQ3Mzc1OTcwNzE2Ni5qcGd8ZjcyZDZmOGZmNDczNTY1ZTgwMDQ0Mzc1NmM3NWJlOGFiMzMyNGJjZmJjN2MyM2NhM2NmYTM4NzJlZGNmNjEzOQ);
+}
+.brand3{
+    background-image: url(https://www.reliancedigital.in/medias/Smartphone-Shop-By-Brands-Realme.jpg?context=bWFzdGVyfGltYWdlc3w1NTkyfGltYWdlL2pwZWd8aW1hZ2VzL2hlMS9oMzYvOTQ3Mzc1OTY0MTYzMC5qcGd8MGMxNDBhMWRmODcxODgzNGMwMjBmYjk2MTU2NTYyZWZlNDBkNTM5OGNhNzY4MmU2NTM2NmRjZGQ1YzQ1MjE1Yg);
+}
+.brand4{
+    background-image: url(https://www.reliancedigital.in/medias/Vivo-Logo-final.jpg?context=bWFzdGVyfGltYWdlc3w1OTM2fGltYWdlL2pwZWd8aW1hZ2VzL2g2Yy9oNjQvOTA5ODk0MTQzMTgzOC5qcGd8MDZhNTdmMjE2Y2Q2ZGJjNzE2MzQ5N2JjZTkzZWQ5OGJhZGNhMGQ4MTkwOTNlMmIwYTE1NzJlNGIxZjhiZWZkNg);
+}
+.brand5{
+    background-image: url(https://www.reliancedigital.in/medias/Samsung-Logo-final.jpg?context=bWFzdGVyfGltYWdlc3w0NTIyfGltYWdlL2pwZWd8aW1hZ2VzL2gxYy9oNDcvOTQ2MjEzNzg4MDYwNi5qcGd8ZmMxZGU1ODY3MGEzZjBkYzg2Y2EwNDRlZWE2ZjE2MmQ5NjY4MDQ4YjkzM2U1ZWNmOTkzNzEwNDgxNmI0NmUzYQ);
+}
+.brand6{
+    background-image: url(https://www.reliancedigital.in/medias/Logo-Mi.jpg?context=bWFzdGVyfGltYWdlc3w2MDQ0fGltYWdlL2pwZWd8aW1hZ2VzL2gwOC9oNWIvOTI5MDUzNjY4MTUwMi5qcGd8ZTY0NzNkZjVlY2U3OWRlNGZiYmIxOTY4ZWFkYjQ5NmIzNTZmYzU3YjM4NGUyY2Q2NTU4NzlhMjllMWRjYThkMA);
+}
+.brand7{
+    background-image: url(https://www.reliancedigital.in/medias/Shop-By-Brands-Oppo.jpg?context=bWFzdGVyfGltYWdlc3w1OTA0fGltYWdlL2pwZWd8aW1hZ2VzL2hlNS9oMjIvOTMzODQ4MDkxODU1OC5qcGd8ZDY0MWRlOTNhOThlMDNhZGIyYTc2MGI1NzczYTUzOGUyMGJhZDY4MTlkOTlhNGEyNWEyNzI2ZTQ1ZWE0ODJhZA);
+}
+.brand8{
+    background-image: url(https://www.reliancedigital.in/medias/Nokia-Logo-final.jpg?context=bWFzdGVyfGltYWdlc3w2MzQ1fGltYWdlL2pwZWd8aW1hZ2VzL2gwZC9oY2QvOTA5ODk0MjE4NTUwMi5qcGd8MmM4ODE0ZDBmOTNkYWRmYjJjMzMwYTIxZGRhZjI3NDQ1ZWU2ZTZmODA5ODJhOWQxNGM4YjZkMGRhNjE2NjFhZA);
+}
+.brand9{
+    background-image: url(https://www.reliancedigital.in/medias/Motorola-Logo-final.jpg?context=bWFzdGVyfGltYWdlc3wzMjQ2fGltYWdlL2pwZWd8aW1hZ2VzL2gxYi9oMDkvOTA5ODk0MjI1MTAzOC5qcGd8NTgzNjhiZDg0Yzg3NzEzNmU5YWU4OTBjYTk2NmMwN2M5ODAxZWFjM2FmZmJhNDEzNTkxN2I3ZjlhY2YxNWMxNQ);
+}
+.brand10{
+    background-image: url(Nothing-Phone-Logo-PNG.png);
+    background-size: 50%;
+}
+.brand11{
+    background-image: url(https://www.reliancedigital.in/medias/TECNO.jpg?context=bWFzdGVyfGltYWdlc3w2NjExfGltYWdlL2pwZWd8aW1hZ2VzL2hjYy9oMTQvOTg3MTE1MTMwMDYzOC5qcGd8YTFmYTY3NTMxNTZiY2NlNDc5MDE5NmI0NGUwYjRkMzkyNmZkYTk0MjE4OGI0Y2M3Nzg0N2FhNmNiYjUwNzAzYQ);
+}
+.brand12{
+    background-image: url(https://rukminim2.flixcart.com/fk-p-flap/240/240/image/39d30a3a536d9da3.jpg?q=90);
+}
+.brand-box div:hover{
+    scale: .95;
+    cursor: pointer;
+}
+/* smartphone deals */
+
+.highlighting-deals-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 243, 252);
+    margin-block: 50px;
+    padding-bottom: 50px;
+}
+.highlighting-deals-container  h2{
+    margin-block: 20px;
+    font-size: 1.8rem;
+    align-self: flex-start;
+    margin-left:  10%;
+}
+
+.highlighting-deals{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* overflow: auto; */
+    /* overflow: hidden; */
+    width: 80%;
+    gap: 15px;
+}
+
+.student-viewing-sugg{
+    height: 480px;
+    width: 295px;
+    flex-shrink: 0;
+    display: flex;
+    color: black;
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: ease-out;
+    transition-duration: .2s;
+}
+
+
+.student-text{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.pricing-student-text span{
+    text-decoration:line-through;
+    color:rgb(80, 80, 80);
+}
+.heading-student-text{
+    font-weight: bold;
+}
+.student-sugg-pic{
+    width: 275px;
+    height: 275px;
+    transition: ease-out;
+    transition-duration: .2s;
+    overflow: hidden;
+}
+
+.student-sugg-pic:hover{
+    scale: 1.08; 
+    overflow: hidden;   
+}
+.student-sugg-pic img{
+    object-position: center;
+    width: 275px;
+    overflow: hidden;
+    height: 275px;
+    aspect-ratio: auto;
+    scale: 90%;
+}
+
+.hdc2{
+    background-color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.svs2{
+    border: 1px solid gainsboro;
+}
+
+/* .student-sugg-pic:hover{
+    transition:ease-in;
+    transition-duration: .2s;
+    scale: 1.02;
+    cursor: pointer;
+} */
+
+.name-student-text{
+    color:rgb(255, 0, 0);
+    font-size: .9rem;
+    padding-top: 4px;
+} 
+.rating-student-text{
+    color: rgb(234, 189, 29);
+    font-weight: bold;
+}
+.bestseller{
+    color: rgb(132, 132, 38);
+    font-size: small;
+    margin-top: .5rem;
+    padding: .1rem .5rem;
+    font-weight: bold;
+    width: fit-content;
+    background-color: rgba(224, 224, 117, 0.827);
+}
+.explore-more{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.explore-more-header{
+    margin-block: 20px;
+    font-size: 1.8rem;
+    width:80%;
+    align-self: flex-start;
+    margin-left:  10%;
+}
+.explore-boxes{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid gainsboro;
+    /* border-radius: 15px; */
+    height: 350px;
+    width: 300px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column-reverse;
+    transition: .2s ease;
+}
+/* .explore-boxes:hover{
+    scale: 1.05;
+} */
+.explore-more-inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    gap: 15px;
+}
+.explore-pc1{
+    background-image: url(https://m.media-amazon.com/images/I/81-fFXQdPTL._SX679_.jpg);
+}
+.explore-pc2{
+    background-image: url(https://m.media-amazon.com/images/I/81MZRUuHJIL._SX679_.jpg);
+    background-size: 120%;
+}
+.explore-pc3{
+    background-image: url(https://m.media-amazon.com/images/I/81t-iyg0JfL._SX679_.jpg);
+}
+.explore-pc4{
+    background-image: url(https://m.media-amazon.com/images/I/61OBw+XUiuL._SX679_.jpg);
+    background-size: 110%;
+}
+.explore-pc5{
+    background-image: url(https://m.media-amazon.com/images/I/61HHS0HrjpL._SX679_.jpg);
+    background-size: 135%;
+}
+.explore-pc6{
+    background-image: url(https://m.media-amazon.com/images/I/71qZERyxy6L._SX679_.jpg);
+    background-size: 120%;
+}
+.explore-pc7{
+    background-image: url(https://m.media-amazon.com/images/I/716FVMg72GS._SY679_.jpg);
+    background-size: 75%;
+}
+.explore-pc8{
+    background-image: url(https://m.media-amazon.com/images/I/61SmnheBBRL._SX679_.jpg);
+    background-size: 115%;
+}
+.explore-pc9{
+    background-image: url(https://m.media-amazon.com/images/I/61bK6PMOC3L._SX679_.jpg);
+    background-size: 150%;
+}
+.explore-pc10{
+    background-image: url(https://m.media-amazon.com/images/I/81X85GWtYHL._SL1500_.jpg);
+    background-size: 110%;
+}
+.explore-pc11{
+    background-image: url(https://m.media-amazon.com/images/I/71b+-Y1SaML._SX679_.jpg);
+    background-size: 120%;
+}
+.explore-pc12{
+    background-image: url(https://m.media-amazon.com/images/I/616FcX9aiEL._SL1200_.jpg);
+}
+.explore-desc{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-image: linear-gradient(to top,rgb(0, 0, 0),black,rgb(0, 0, 0, 0));
+    padding: 100px 15px 28px 15px;
+    gap: 5px;
+}
+
+.explore-desc h2{
+    font-size: 1.3rem;
+}
+.change-on-hover{
+    opacity: 0;
+    transition: .4s ease-in-out;
+}
+
+.change-on-hover:hover{
+    opacity: 1;
+}
+
+.explore-desc p{
+    font-size: 1.4rem;
+    /* font-weight: 800; */
+    padding-block: 10px;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color: rgba(207, 207, 207, 0.913);
+}
+
+.explore-desc div{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+.explore-desc div button{
+    padding: 10px 8px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2px;
+}
+.explore-desc div button:hover{
+    cursor: pointer;
+}
+.buy-now{
+    color: white;
+    background-color: rgb(0, 110, 255);
+}
+.add-to-cart{
+    background-color: white;
+    color: black;
+}
+.see-all{
+    width: 100%;
+    margin-block: 20px;
+}
+
+.see-all button{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    background-color: rgba(151, 151, 151, 0.22);
+    width: 100%;
+    padding-block: 10px;
+    border: none;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.see-all button:hover{
+    scale: 1.005;
+    text-decoration: underline;
+}
+
+.banner-club3{
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/tiyesum/AU/10thAug/AU-BANK_MOB.jpg);
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+}
+
+
+/* Footer */
+footer{
+    gap: 20px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    color: white;
+    padding-block: 40px;
+    gap: 50px;
+}
+
+.upper-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20%;
+}
+.upper-footer div li{
+    list-style: none;
+}
+.upper-footer div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+.upper-footer div li:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+.lower-footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.lower-footer h2{
+    font-size: 2rem;
+}
+.social-media{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}

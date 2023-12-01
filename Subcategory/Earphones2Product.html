@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appliances - Sony WH-1000XM4 Bluetooth Overhead Headphones</title>
+    <link rel="stylesheet" href="Earphones2Product.css" />
+    <link rel="icon" type="image/x-icon" href="/images/store.png">
+    <script src="https://kit.fontawesome.com/5c324d89d4.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="whatsapp-contact-btn"><button><i class="fa-brands fa-whatsapp"></i></button></div>
+<div class="sticky-header">
+    <nav>
+        <div class="logo">
+            <h2>A P P L I A N C E S</h2>
+        </div>
+        <div class="input-entry">
+                <input type="text" name="" class="input-box">
+                <input type="submit" class="submitbtn" value="Search">
+        </div>
+        <div class="wishlist-cart">
+            <button class="wishlist-cartbtn"><i class="fa-regular fa-heart"></i> Wishlist</button>
+            <button class="wishlist-cartbtn"><a href="/payment.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a></button>
+            <button class="signup-btn"><a href="/login.html"><i class="fa-solid fa-user"></i></a></button>
+        </div>
+      </nav>
+      <div class="categories-locatebar">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li>Shop</li>
+            <li><a href="/aboutUs.html">About Us</a></li>
+            <li><a href="/category.html">Categories</a></li>
+            <li><a href="/contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+</div>
+
+<marquee class="blink" scrollamount="12">Use <span>summerbonanza</span> coupon code to get &#8377;1,299 discount on your order. One time use only</marquee>
+
+<div id="overlay-cont" class="overlay-cont">
+    <div class="if-in-cart">
+        <img src="/Images/undraw_faq_re_31cw.svg" alt="">
+        <p>Please confirm, Do you really want to add <br>this item in cart ?</p>
+        <div class="overlay-button"><button id="yes-btn-overlay" class="yes-btn-overlay">Yes!</button> <button onclick="closeOverlay()" id="no-btn-overlay" class="no-btn-overlay">Nop!</button></div>
+    </div>
+</div>
+
+<div class="overlay-cont2" id="overlay-cont2">
+    <div class="if-buy-now">
+        <div class="delivery-details">
+            <h2>Delivery Information</h2>
+            <div class="delivery-form">
+                <div class="delivery-form-item">
+                    <label for="full-name">Name</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="John Doe">
+                </div>
+                <div class="delivery-form-item">
+                    <label for="contact-number">Mobile Number</label>
+                    <input type="tel" name="contact-number" maxlength="10" placeholder="18000-18000">
+                </div>
+                <div class="delivery-form-item">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="abc@gmail.com">
+                </div>
+                <div class="delivery-form-item">
+                    <label for="city-name">City</label>
+                    <input type="text" name="city-name" placeholder="Panchkula"> 
+                </div>
+                <div class="delivery-form-item">
+                    <label for="State">State</label>
+                    <input type="text" name="State" placeholder="Haryana">
+                </div>
+                <div class="delivery-form-item">
+                    <label for="zip-code">PIN</label>
+                    <input name="zip-code" type="text" pattern="\d*" maxlength="6" placeholder="160062">
+                </div>
+                <div class="delivery-form-item1">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" placeholder="4796 Libby Street">
+                </div>
+            </div>
+        </div>
+        <div class="schedule-delivery">
+            <h2>Schedule Delivery</h2>
+            <div class="schedule-delivery-form">
+                <div class="delivery-form-item1">
+                    <label for="Date">Date</label>
+                    <input type="date" name="Date" placeholder="07-08-2023">
+                </div>
+                <div class="delivery-form-item1">
+                    <label for="note">Note</label>
+                    <textarea name="note" id="" cols="30" rows="3" placeholder="Type your note"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="Payment-method">
+            <h2>Payment Method</h2>
+            <div class="payment-method-option">
+                <!-- <label>
+                    <input type="radio" class="radio" value="Online-Payment" name="paymentMethod" />Online Payment</label> -->
+                    <label>
+                        <input type="radio" class="radio" value="cod" name="paymentMethod" />Cash on Delivery</label>
+                        <label>
+                            <input type="radio" class="radio" value="pos" name="paymentMethod" />POS on Delivery</label>
+            </div>
+        </div>
+        
+    </div>
+    <div class="order-summary">
+        <h2>Order Summary</h2>
+        <div class="cart">
+            <div class="cart-item">
+                <div class="cart-detailswithpic">
+                    <div class="cart-detailswithpic1" >
+                        <div id="cart-pic" class="cart-pic"></div>
+                        <div class="cart-details">
+                            <h3 id="cart-item-title">Portable shit</h3>
+                            <p id="cart-item-id">random-id</p>
+                            <p id="cart-itemprice">&#8377;<span id="cart-item-price">1,49,999</span></p>
+                        </div>
+                    </div>
+                    <p id="item-quantity" class="item-quantity">1</p>
+                </div>
+            </div>
+
+            <div class="order-total">
+                <div class="discount-cpn">
+                    <input id="coupon-inp" type="text" placeholder="Enter coupon code">
+                    <button id="cpn-btn">Apply</button>
+                </div>
+                <hr>
+                <div class="order-total-content">
+                    <p class="order-sub">Subtotal</p>
+                    <p id="ordersubtotal">&#8377;<span id="order-subtotal">1,23,999</span></p>
+                </div>
+                <div class="order-total-content">
+                    <p class="order-sub">Shipping</p>
+                    <p id="order-Shipping">&#8377; 40</p>
+                </div>
+                <div class="order-total-content">
+                    <p class="order-sub">Discount (if any)</p>
+                    <p>&#8377; <span id="order-disc">0</span></p>
+                </div>
+                <hr>
+                <div class="order-total-content">
+                    <p class="order-sub">Total(INR)</p>
+                    <p >&#8377;<span id="order-total">1,23,999</span></p>
+                </div>
+                <button id="confirm-order" class="confirm-order" type="submit">Confirm Order</button>
+            </div>
+        </div>
+
+    </div>
+    <p class="closeBtn" onclick="closeOverlay2()" >&times;</p>
+</div>
+
+<div class="product-page">
+    <div id="lhs-pic-cont" class="lhs-pic-cont">
+        <div class="change-pic">
+            <button id="leftpicchange">◀</button>
+            <button id="rightpicchange">▶</button>
+        </div>
+    </div>
+    <div class="rhs-product-cont">
+        <h1 class="product-title reveal" id="product-title">Sony WH-1000XM4 Industry Leading Wireless Noise Cancellation Bluetooth Over Ear Headphones with Mic<br>Black</h1>
+        <p class="product-price reveal">&#8377; <span id="product-cost"> 19,987 </span> <span class="original-price">&#8377;29,990</span></p>
+        <p class="product-description reveal">It's just you and your music with the WH-1000XM4 headphones. The easy way to enjoy less noise and even purer sound, with smart listening technology that automatically personalises your experience.
+        </p>
+        <div class="quantity-button">
+            <button id="diff" class="diff">-</button>
+            <h1 class="inp-quantity" id="inp-quantity">1</h1>
+            <button id="add" class="add">+</button>
+        </div>
+
+        <div class="buttons-rhs reveal">
+            <button id="add-cartbtn" class="add-cartbtn">ADD TO CART</button>
+            <button id="buynowbtn" class="buynowbtn">BUY NOW</button>
+        </div>
+
+
+        <hr>
+
+        <li>This product is made to order and is typically takes 3-4 working days. Cash on delivery is available on this product, however availability is on first come basis.</li>
+        <li>Some products are not eligible for cancellations or returns. Read our Return Policy carefully.</li>
+    </div>
+</div>
+
+    <div class="video-banner">
+        <video autoplay muted loop width="60%" height="30%" src="/Images/sonyHeadphones.mp4"></video>
+    </div>
+
+<div class="product-specs">
+    <h1 class="reveal">About this item</h1>
+            <ul class="reveal">
+                <li><span style="font-weight: bold;">Digital Noise Cancelling : </span>Industry leading Active Noise Cancellation (ANC) lends a personalized, virtually soundproof experience at any situation;Voice assistant: Alexa, Google Assistant & Siri enabled (In-built) for voice access to music, information and more. Activate with a simple touch</li>
+                <li><span style="font-weight: bold;">Speak-to-Chat : </span>Headphones use an array of smart technologies to create a seamless, hands-free listening experience. For eg, simply start speaking to automatically pause your music in Speak-to-Chat;Wearing Detection: Proximity sensor and two acceleration sensors in your headphones can detect whether you're wearing them or not, then adapt playback accordingly to help save battery power</li>
+                <li><span style="font-weight: bold;">Quick attention mode : </span> Cover the right ear cup with your palm to turn down music for instant, easy conversation;Smart listening: WH-1000XM4 adjusts the ambient sound to your activity to give you the best noise cancellation</li>
+                <li><span style="font-weight: bold;">Long battery life/Quick Charge : </span>A single charge provides up to 30 hrs of playtime for reliable all day listening and Quick charge for 10min charge for 5 hours play back;Multipoint connection : It can be paired with two Bluetooth devices at the same time.
+                </li>
+                <li><span style="font-weight: bold;">Warranty Information : </span>1 Year Warranty Provided By The Manufacturer From Date Of Purchase
+                </li>
+            </ul>        
+        <div class="img-specs reveal">
+            <img src="https://m.media-amazon.com/images/I/718QFsp+SyL._SL1500_.jpg" alt="" srcset="">
+            <img src="https://m.media-amazon.com/images/I/815L+YZA4iL._SL1500_.jpg" alt="" srcset="">
+        </div>
+</div>
+
+<div class="customer-reviews">
+    <h1>Customer reviews</h1>
+    <div class="input-review-box">
+        <input type="text" name="" class="rating-inp user-name" placeholder="Write your name" id="user-name">
+        <select id="ratings"  placeholder="Give your rating here" class="rating-inp">
+            <option value="1">⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="5">⭐⭐⭐⭐⭐</option>
+        </select>
+        <input type="text" class="review-inp" id="review-inp" placeholder="Write your thoughts on the product here.....">
+        <button id="post-review" class="post-review">Post</button>
+    </div>
+    <div class="review-box" id="review-box">
+        <div class="comments reveal">
+            <div class="user-details"> <div class="profile-pc" id="profile-pc">S</div> <p class="user-name">Sush</p> </div>
+            <p class="review">Pros:
+                easy to charge as it uses USB C. Long lasting battery.
+                Fits okay, but if your head is small you always feel it is going to fall.
+                It can connect to 2 devices simultaneously I used it with windows, Android and Apple and it works well.
+                The carry case is good to carry it as it folds and saves lot of space. Fits in back pack.
+                Audio is good and clear. Overall build quality is good.
+                Con: if you wear for extended period of time, it starts making you uncomfortable and gives pain in ears. Only because of this 4 star otherwise it would be a 5star.</p>
+            <hr>
+            <p><span class="ratings">⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+      <footer>
+        <div class="footer-container">
+        <div class="upper-footer">
+            <div>
+                <li>Contact Us</li>
+                <li>About Us</li>
+                <li>Be a Seller</li>
+                <li>Corporate Information</li>
+                <li>FAQ</li>
+            </div>
+            <div>
+                <li>Payments</li>
+                <li>Shipping</li>
+                <li>Cancellation & Returns</li>
+                <li>Report Infringement</li>
+                <li>Security</li>
+            </div>
+            <div>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Youtube</li>
+                <li class="social-media"><i class="fa-solid fa-envelope"></i> <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-twitter"></i></li>
+            </div>
+
+        </div>
+        <div class="lower-footer">
+            <h2>A P P L I A N C E S</h2>
+            <p>© 2022 Appliances, Inc.</p>
+        </div>
+    </div>
+      </footer>
+
+    </div>
+    <script src="Earphones2Product.js"></script>
+  </body>
+</html>

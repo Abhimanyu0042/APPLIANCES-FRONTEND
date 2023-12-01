@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appliances - LG 121 cm (48 inches) 4K Ultra HD Smart OLED TV</title>
+    <link rel="stylesheet" href="TelevisionProduct.css" />
+    <script src="https://kit.fontawesome.com/5c324d89d4.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/images/store.png">
+  </head>
+  <body>
+    <div class="container">
+        <div class="whatsapp-contact-btn"><button><i class="fa-brands fa-whatsapp"></i></button></div>
+<div class="sticky-header">
+    <nav>
+        <div class="logo">
+            <h2>A P P L I A N C E S</h2>
+        </div>
+        <div class="input-entry">
+                <input type="text" name="" class="input-box">
+                <input type="submit" class="submitbtn" value="Search">
+        </div>
+        <div class="wishlist-cart">
+            <button class="wishlist-cartbtn"><i class="fa-regular fa-heart"></i> Wishlist</button>
+            <button class="wishlist-cartbtn"><a href="/payment.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a></button>
+            <button class="signup-btn"><a href="/login.html"><i class="fa-solid fa-user"></i></a></button>
+        </div>
+      </nav>
+      <div class="categories-locatebar">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li>Shop</li>
+            <li><a href="/aboutUs.html">About Us</a></li>
+            <li><a href="/category.html">Categories</a></li>
+            <li><a href="/contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+</div>
+
+<marquee class="blink" scrollamount="12">Use <span>summerbonanza</span> coupon code to get &#8377;1,299 discount on your order. One time use only</marquee>
+
+<div id="overlay-cont" class="overlay-cont">
+    <div class="if-in-cart">
+        <img src="/Images/undraw_faq_re_31cw.svg" alt="">
+        <p>Please confirm, Do you really want to add <br>this item in cart ?</p>
+        <div class="overlay-button"><button id="yes-btn-overlay" class="yes-btn-overlay">Yes!</button> <button onclick="closeOverlay()" id="no-btn-overlay" class="no-btn-overlay">Nop!</button></div>
+    </div>
+</div>
+
+<div class="overlay-cont2" id="overlay-cont2">
+    <div class="if-buy-now">
+        <div class="delivery-details">
+            <h2>Delivery Information</h2>
+            <div class="delivery-form">
+                <div class="delivery-form-item">
+                    <label for="full-name">Name</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="John Doe">
+                </div>
+                <div class="delivery-form-item">
+                    <label for="contact-number">Mobile Number</label>
+                    <input type="tel" name="contact-number" maxlength="10" placeholder="18000-18000">
+                </div>
+                <div class="delivery-form-item">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="abc@gmail.com">
+                </div>
+                <div class="delivery-form-item">
+                    <label for="city-name">City</label>
+                    <input type="text" name="city-name" placeholder="Panchkula"> 
+                </div>
+                <div class="delivery-form-item">
+                    <label for="State">State</label>
+                    <input type="text" name="State" placeholder="Haryana">
+                </div>
+                <div class="delivery-form-item">
+                    <label for="zip-code">PIN</label>
+                    <input name="zip-code" type="text" pattern="\d*" maxlength="6" placeholder="160062">
+                </div>
+                <div class="delivery-form-item1">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" placeholder="4796 Libby Street">
+                </div>
+            </div>
+        </div>
+        <div class="schedule-delivery">
+            <h2>Schedule Delivery</h2>
+            <div class="schedule-delivery-form">
+                <div class="delivery-form-item1">
+                    <label for="Date">Date</label>
+                    <input type="date" name="Date" placeholder="07-08-2023">
+                </div>
+                <div class="delivery-form-item1">
+                    <label for="note">Note</label>
+                    <textarea name="note" id="" cols="30" rows="3" placeholder="Type your note"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="Payment-method">
+            <h2>Payment Method</h2>
+            <div class="payment-method-option">
+                <!-- <label>
+                    <input type="radio" class="radio" value="Online-Payment" name="paymentMethod" />Online Payment</label> -->
+                    <label>
+                        <input type="radio" class="radio" value="cod" name="paymentMethod" />Cash on Delivery</label>
+                        <label>
+                            <input type="radio" class="radio" value="pos" name="paymentMethod" />POS on Delivery</label>
+            </div>
+        </div>
+        
+    </div>
+    <div class="order-summary">
+        <h2>Order Summary</h2>
+        <div class="cart">
+            <div class="cart-item">
+                <div class="cart-detailswithpic">
+                    <div class="cart-detailswithpic1" >
+                        <div id="cart-pic" class="cart-pic"></div>
+                        <div class="cart-details">
+                            <h3 id="cart-item-title">Portable shit</h3>
+                            <p id="cart-item-id">random-id</p>
+                            <p id="cart-itemprice">&#8377;<span id="cart-item-price">1,49,999</span></p>
+                        </div>
+                    </div>
+                    <p id="item-quantity" class="item-quantity">1</p>
+                </div>
+            </div>
+
+            <div class="order-total">
+                <div class="discount-cpn">
+                    <input id="coupon-inp" type="text" placeholder="Enter coupon code">
+                    <button id="cpn-btn">Apply</button>
+                </div>
+                <hr>
+                <div class="order-total-content">
+                    <p class="order-sub">Subtotal</p>
+                    <p id="ordersubtotal">&#8377;<span id="order-subtotal">1,23,999</span></p>
+                </div>
+                <div class="order-total-content">
+                    <p class="order-sub">Shipping</p>
+                    <p id="order-Shipping">&#8377; 40</p>
+                </div>
+                <div class="order-total-content">
+                    <p class="order-sub">Discount (if any)</p>
+                    <p>&#8377; <span id="order-disc">0</span></p>
+                </div>
+                <hr>
+                <div class="order-total-content">
+                    <p class="order-sub">Total(INR)</p>
+                    <p >&#8377;<span id="order-total">1,23,999</span></p>
+                </div>
+                <button id="confirm-order" class="confirm-order" type="submit">Confirm Order</button>
+            </div>
+        </div>
+
+    </div>
+    <p class="closeBtn" onclick="closeOverlay2()" >&times;</p>
+</div>
+
+<div class="product-page">
+    <div id="lhs-pic-cont" class="lhs-pic-cont">
+        <div class="change-pic">
+            <button id="leftpicchange">◀</button>
+            <button id="rightpicchange">▶</button>
+        </div>
+    </div>
+    <div class="rhs-product-cont">
+        <h1 class="product-title reveal" id="product-title">LG 121 cm (48 inches) 4K Ultra HD Smart OLED TV 48A2PSA (Rocky Black)<br></h1>
+        <p class="product-price reveal">&#8377; <span id="product-cost"> 59,999 </span> <span class="original-price">&#8377;1,09,990</span></p>
+        <p class="product-description reveal"><ul><span style="font-weight: bold; color: black;">Key Features:</span>
+            <li style="margin-top: 10px;">Pixel Dimming, Perfect Black, 100% Color Fidelity & Color Volume</li>
+            <li>Dolby Vision IQ with Precision Detail, Dolby Atmos, Filmmaker Mode</li>
+            <li>Hands-free Voice Control, Always Ready</li>
+            <li>HDMI 2.1, NVIDIA G-SYNC, VRR, AMD FreeSync™</li>
+            <li>Eye Comfort Display: Low-Blue Light, Flicker-Free</li>
+        </ul>
+        </p>
+        <div class="quantity-button">
+            <button id="diff" class="diff">-</button>
+            <h1 class="inp-quantity" id="inp-quantity">1</h1>
+            <button id="add" class="add">+</button>
+        </div>
+
+        <div class="buttons-rhs ">
+            <button id="add-cartbtn" class="add-cartbtn">ADD TO CART</button>
+            <button id="buynowbtn" class="buynowbtn">BUY NOW</button>
+        </div>
+
+
+        <hr class="reveal">
+
+        <li class="reveal">This product is made to order and is typically takes 3-4 working days. Cash on delivery is available on this product, however availability is on first come basis.</li>
+        <li class="reveal">Some products are not eligible for cancellations or returns. Read our Return Policy carefully.</li>
+    </div>
+</div>
+
+    <div class="video-banner">
+        <video autoplay muted loop width="70%" height="100%" src="/Images/lg.mp4"></video>
+    </div>
+
+<div class="product-specs">
+    <h1 class="reveal">About this product</h1>
+        <ul class="reveal">
+            <li><span style="font-weight: bold;">Resolution : </span>4K Ultra HD (3840x2160) | AI 4K Upscaler</li>
+            <li><span style="font-weight: bold;">Connectivity : </span>Wi-Fi (Built-in) | 3 HDMI ports to connect set top box, Blu Ray players, gaming console | 2 USB ports to connect hard drives and other USB devices | eARC | Bluetooth 5.0 | Optical | Ethernet
+            <li><span style="font-weight: bold;">Sound : </span> 20 Watts Output | 2.0 Ch Speaker | Dolby Atmos Sound Configuration | AI Sound Pro with Virtual 5.1.2 up-mix | Built-in Stereo Surround Sound
+            </li>
+            <li><span style="font-weight: bold;">Smart TV Features : </span>AI ThinQ & WebOS 22 with User Profiles | Built-in Google Assistant & Alexa | Apple Airplay 2 & Homekit | Game Optimizer & Dashboard | α7 Gen5 AI Processor 4K | Unlimited OTT App Support: Netflix, Prime Video, Disney+ Hotstar, Apple TV, SonyLIV, Discovery+, Zee5 | ALLM & 0.1 ms Response Time
+            </li>
+            <li><span style="font-weight: bold;">Display : </span>4K OLED | Self-LIT Pixels | Dolby Vision IQ | Eye Comfort Display
+            </li>
+            <li><span style="font-weight: bold;">Warranty Information : </span>1 Year LG India Comprehensive Warranty and additional 2 year Warranty is applicable on panel/module from the date of purchase
+            </li>
+        </ul>
+        <div class="img-specs reveal">
+            <img src="https://m.media-amazon.com/images/I/71C-mg4BDTL._SL1500_.jpg" alt="" srcset="">
+            <img src="https://m.media-amazon.com/images/I/71JRNYrLwUL._SL1500_.jpg" alt="" srcset="">
+        </div>
+</div>
+
+<div class="customer-reviews">
+    <h1>Customer reviews</h1>
+    <div class="input-review-box">
+        <input type="text" name="" class="rating-inp user-name" placeholder="Write your name" id="user-name">
+        <select id="ratings"  placeholder="Give your rating here" class="rating-inp">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <input type="text" class="review-inp" id="review-inp" placeholder="Write your thoughts on the product here.....">
+        <button id="post-review" class="post-review">Post</button>
+    </div>
+    <div class="review-box" id="review-box">
+        <div class="comments">
+            <div class="user-details"> <div class="profile-pc" id="profile-pc">N</div> <p class="user-name">Navneet Verma</p> </div>
+            <p class="review">I bought in on prime day day sale,this is the Best thing you can get in this price I got it in 55000.<br>
+                1.Brightness is little bit low but it's fine if you are watching dolby vision or hdr content.<br>
+                2.i also have 120hz tv in my home I connected this tv with my ps5 and pc you will feel huge difference if you were using 120hz display before,but at this price you can't complaint.<br>
+                3.colours and picture quality is top notch.<br>
+                4.sound is very good.<br>
+                5.wall mount stand is another cherry on the top you can adjust it accordingly.<br>
+                6.overall I would rate it 9/10<br>
+                1star less because of lg service.</p>
+            <hr>
+            <p><span class="ratings">⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+      <footer>
+        <div class="footer-container">
+        <div class="upper-footer">
+            <div>
+                <li>Contact Us</li>
+                <li>About Us</li>
+                <li>Be a Seller</li>
+                <li>Corporate Information</li>
+                <li>FAQ</li>
+            </div>
+            <div>
+                <li>Payments</li>
+                <li>Shipping</li>
+                <li>Cancellation & Returns</li>
+                <li>Report Infringement</li>
+                <li>Security</li>
+            </div>
+            <div>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Youtube</li>
+                <li class="social-media"><i class="fa-solid fa-envelope"></i> <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-twitter"></i></li>
+            </div>
+
+        </div>
+        <div class="lower-footer">
+            <h2>A P P L I A N C E S</h2>
+            <p>© 2022 Appliances, Inc.</p>
+        </div>
+    </div>
+      </footer>
+
+    </div>
+    <script src="TelevisionProduct.js"></script>
+  </body>
+</html>

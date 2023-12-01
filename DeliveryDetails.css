@@ -1,0 +1,690 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Bahnschrift;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.whatsapp-contact-btn{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+.whatsapp-contact-btn button{
+    font-size: 2.2rem;
+    padding: 12px 17px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.sticky-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    background-color: white;
+    z-index: 10;   
+    position: sticky;
+}
+/* navigation bar */
+
+nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 30px;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    font-size: 1rem;
+}
+.input-entry{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.input-box{
+    width: 80%;
+    padding: 6px;
+    font-size: 1rem;
+}
+.submitbtn{
+    padding: 9px 8px;
+    font-size: .8rem;
+    color: white;
+    background-color: rgb(0, 110, 255);
+    border: none;
+    cursor: pointer;
+}
+.wishlist-cart{
+    display: flex;
+    gap: 10px;
+}
+.wishlist-cartbtn{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+    cursor: pointer;
+    padding: 9px 8px;
+    font-size: .8rem;
+    color: white;
+    background-color: rgb(0, 110, 255);
+    border: none;
+}
+
+.signup-btn{
+    cursor: pointer;
+    padding: 9px 9px;
+    font-size: .8rem;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+}
+
+/* Categories bar */
+.categories-locatebar{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.categories-locatebar ul{
+    list-style: none;
+    width: 70%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-block: 20px;
+    font-size: 1rem;
+    gap: 10%;
+    justify-content: center;
+}
+
+.categories-locatebar ul li{
+    cursor: pointer;
+    transition: .2s ease-in ;
+    overflow: hidden;
+}
+
+.categories-locatebar ul li:hover{
+    scale: 1.07;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.navigate-in{
+    display: none;
+}
+/* Overlay Payment done */
+.overlay-cont{
+    height:0%;
+    width:100%;
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    background-image: url();
+    background-color: rgb(255, 255, 255); 
+    background-color: rgba(59, 59, 59, 0.071);
+    backdrop-filter: blur(10px);
+    overflow-x: hidden;
+    /* transition: 0.5s; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.order-confirmed{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-block: 30px;
+    border-radius: 5px;
+    padding-inline: 30px;
+    margin: 20px;
+    gap: 10px;
+}
+.order-email-sent{
+    margin-bottom: 30px;
+    color: #818181;
+}
+
+.order-confirmed img{
+    width: 75px;
+    margin-bottom: 20px;
+}
+.order-confirmed hr{
+    width: 100%;
+}
+.confirmation-details{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.continue-shopping{
+    width: 100%;
+    padding-block: 20px;
+    font-size: 1rem;
+    margin-top: 20px;
+    color: white;
+    border-radius: 5px;
+    background-color: black;
+    cursor: pointer;
+    border: 2px solid white;
+}
+.continue-shopping:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+
+
+
+
+
+
+/* Main Content */
+
+.overlay-cont2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin-block: 30px;
+    gap: 20px;
+    background-color: white;
+    overflow-x: hidden;
+}
+.closeBtn{
+    color: grey;
+    font-size: 3rem;
+    align-self: flex-start;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.closeBtn:hover{
+    cursor: pointer;
+    color: white;
+}
+.if-buy-now{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    margin-block: 30px;
+    width: 40%;
+}
+.if-buy-now h2{
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+}
+.delivery-details{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+    width: 100%;
+}
+.delivery-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border:  2px solid gainsboro;
+    gap: 15px;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+}
+
+.delivery-form-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    /* min-width: 30%; */
+    gap: 3px;
+    flex-wrap: wrap;
+}
+
+.delivery-form-item label{
+    font-size: .9rem;
+}
+
+.delivery-form-item input{
+    border: 1px solid gainsboro;
+    padding: 7px 0px 7px 10px;
+}
+.delivery-form-item1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 3px;
+}
+.delivery-form-item1 label{
+    font-size: .9rem;
+}
+.delivery-form-item1 input{
+    border: 1px solid gainsboro;
+    padding: 7px 0px 7px 10px;
+}
+
+.delivery-form-item1 textarea{
+    border: 1px solid gainsboro;
+    padding: 7px 0px 7px 10px;
+}
+
+.schedule-delivery{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.schedule-delivery-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2px solid gainsboro;
+    gap: 15px;
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+}
+.Payment-method{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    width: 100%;
+}
+.payment-method-option{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border:  2px solid gainsboro;
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+}
+.payment-method-option label{
+    font-size: .9rem;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+.order-summary{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    gap: 5px;
+    padding: 20px;
+    width: 40%;
+    height: 100%;
+}
+.card-details{
+    border: 2px solid gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-inline: 20px;
+}
+
+.right{
+	flex-basis: 50%;
+}
+form{
+	padding: 1rem;
+}
+
+h3{
+	margin-top: 1rem;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+	color:black;
+	}
+
+form input,select{
+	width: 100%;
+	padding: 0.5rem 0.7rem;
+	margin: 0.5rem 0;
+	outline: none;
+}
+
+#zip{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 30px;
+	margin-top: 0.5rem;
+}
+#zip select{
+	padding: 0.5rem 0.7rem;
+    margin: 0.5rem 0;
+    width: 100%;
+}
+#zip input[type="number"]{
+	padding: 0.5rem 0.7rem;
+	margin-left: 5px;	
+    width: 100%;
+}
+.payment-Submit{
+	width: 95%;
+	padding: 0.7rem 1.5rem;
+	color: white;
+	border: none;
+	outline: none;
+	margin-top: 1rem;
+	cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.payment-Submit{
+	background: rgb(0, 110, 255);
+}
+
+.payment-Submit:hover{
+    border: 1px solid rgb(0, 110, 255);
+background-color: white;
+color: rgb(0, 110, 255);
+scale: 1.05;
+}
+
+.payment-Submit2{
+    width: 95%;
+	padding: 0.7rem 1.5rem;
+	color: white;
+	border: none;
+	outline: none;
+	margin-top: 1rem;
+	cursor: pointer;
+    transition: .3s ease-in-out;
+	background: rgb(0, 0, 0);
+}
+
+.payment-Submit2:hover{
+    border: 1px solid rgb(0, 0, 0);
+background-color: white;
+color: rgb(0, 0, 0);
+scale: 1.05;
+}
+
+
+.pic-delivery-details{
+    background-image: url(Images/undraw_on_the_way_re_swjt.svg);
+    background-size: 80% ;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 1213px){
+    .overlay-cont2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        margin-block: 30px;
+        gap: 20px;
+        background-color: white;
+        overflow-x: hidden;
+    }
+    .if-buy-now{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 30px;
+        margin-block: 30px;
+        width: 90%;
+    }
+    .order-summary{
+        width: 90%;
+    }
+}
+
+
+@media only screen and (max-width: 770px){
+	.container{
+		flex-direction: column;
+	}
+	body{
+		overflow-x: hidden;
+	}
+}
+
+
+
+
+/* Footer of the page */
+
+footer{
+    gap: 20px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    color: white;
+    padding-block: 40px;
+    gap: 50px;
+}
+
+.upper-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20%;
+}
+.upper-footer div li{
+    list-style: none;
+}
+.upper-footer div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+.upper-footer div li:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+.lower-footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.lower-footer h2{
+    font-size: 2rem;
+}
+.social-media{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width:990px) {
+    .input-entry{
+        display: none;
+    }
+    .categories-locatebar{
+        justify-content: left;
+        width: 100%;
+    }
+    .categories-locatebar ul li{
+        display: none;
+    }
+    .categories-locatebar ul{
+        width: 100%;
+        display: flex;
+        justify-content: left;
+    }
+    .navigate-in{
+        display: block;
+        padding-left: 40px;
+    }
+    .WhishListButton{
+        display: none;
+    }
+
+    .banner-desc {
+        text-align: center;
+        padding: 50px;
+        font-size: 2rem;
+        color: white;
+        font-weight: bold;
+    }
+    .cartImage{
+        background-image: url(Images/8093572.jpg);
+        height: 400px;
+        width: 100%;
+        background-size: 130%;
+        background-position: center;
+        background-position: -50px 40px;
+        position:fixed;
+        top: 0;
+        margin-top: 155px;
+        z-index: -10;
+    }
+    .cart-detailswithpic{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-left: 5px;
+    }
+    .item-quantity{
+        align-self: flex-end;
+    }
+
+    .delivery-form{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-inline: 10px;
+    top: 15%; 
+    width: 100%; 
+    text-align: left; 
+    margin-top: 30px;
+  }
+
+  .overlay a{
+    padding: 8px;
+    text-decoration: none;
+    min-width: 100px;
+    flex-shrink: 0;
+    margin-inline: 10px;
+    font-size: 2rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay-content li a {
+    padding: 8px;
+    text-decoration: none;
+    min-width: 100px;
+    flex-shrink: 0;
+    margin-inline: 10px;
+    font-size: 1.2rem;
+    border-bottom: .2px solid rgba(245, 245, 245, 0.473);
+    color: #818181;
+    display: block; 
+    transition: 0.3s; 
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    margin-left: 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }

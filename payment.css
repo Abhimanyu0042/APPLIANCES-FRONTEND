@@ -1,0 +1,523 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Bahnschrift;
+}
+
+
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.whatsapp-contact-btn{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+.whatsapp-contact-btn button{
+    font-size: 2.2rem;
+    padding: 12px 17px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.sticky-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    background-color: white;
+    z-index: 10;   
+    position: sticky;
+}
+/* navigation bar */
+
+nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 30px;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    font-size: 1rem;
+}
+.input-entry{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.input-box{
+    width: 80%;
+    padding: 6px;
+    font-size: 1rem;
+}
+.submitbtn{
+    padding: 9px 8px;
+    font-size: .8rem;
+    color: white;
+    background-color: rgb(0, 110, 255);
+    border: none;
+    cursor: pointer;
+}
+.wishlist-cart{
+    display: flex;
+    gap: 10px;
+}
+.wishlist-cartbtn{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+    cursor: pointer;
+    padding: 9px 8px;
+    font-size: .8rem;
+    color: white;
+    background-color: rgb(0, 110, 255);
+    border: none;
+}
+
+.signup-btn{
+    cursor: pointer;
+    padding: 9px 9px;
+    font-size: .8rem;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+}
+
+/* Categories bar */
+.categories-locatebar{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.categories-locatebar ul{
+    list-style: none;
+    width: 70%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-block: 20px;
+    font-size: 1rem;
+    gap: 10%;
+    justify-content: center;
+}
+
+.categories-locatebar ul li{
+    cursor: pointer;
+    transition: .2s ease-in ;
+    overflow: hidden;
+}
+
+.categories-locatebar ul li:hover{
+    scale: 1.07;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.navigate-in{
+    display: none;
+}
+/* Image Banner */
+.cartImage{
+    background-image: url(Images/8093572.jpg);
+    height: 400px;
+    width: 100%;
+    background-size: 120%;
+    background-position: -160px -240px;
+    position:fixed;
+    top: 0;
+    margin-top: 155px;
+    z-index: -10;
+}
+
+.banner-desc {
+    text-align: right;
+    padding: 80px;
+    font-size: 3.2rem;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Cart */
+.overlay-cont2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 40px;
+    margin-top: 400px;
+    /* backdrop-filter: blur(10px); */
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* z-index: -1; */
+    overflow-x: hidden;
+}
+
+
+.order-summary{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+}
+.order-summary h2{
+    font-size: 2.05rem;
+    color: black;
+    text-align: left;
+    padding-block: 10px;
+    margin-block: 10px;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+
+
+}
+.cart{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+.cart-item{
+    margin-block: 10px;
+}
+
+.cart-detailswithpic{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart-detailswithpic1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.cart-pic{
+    height: 125px;
+    width: 125px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.pic1{
+    background-image: url(https://m.media-amazon.com/images/I/71T5NVOgbpL._SX679_.jpg);
+}
+.pic2{
+    background-image: url(https://m.media-amazon.com/images/I/613M7dVofsL._SL1500_.jpg);
+}
+.cart-details{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 250px;
+    gap: 3px;
+}
+
+.cart-details h3{
+    font-size: 1.2rem;
+}
+#cart-item-id{
+    color: grey;
+}
+#cart-itemprice{
+    color: black;
+    margin: 5px;
+    font-size: 1.2rem;
+}
+.remove-btn{
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: black;
+    transition: ease-in-out;
+}
+.remove-btn:hover{
+    border: 2px solid red;
+    color: red;
+    background-color: white;
+}
+.item-quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-size: 1rem;
+}
+.discount-cpn{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+.discount-cpn input{
+    width:100%;
+    border: 1px solid gainsboro;
+    font-size: 1.2rem;
+    padding: 7px;
+}
+.discount-cpn button{
+    padding: 7px;
+    cursor: pointer;
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+}
+.order-total{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 15px;
+    font-size: 1.2rem;
+    margin-top: 150px;
+}
+.order-total-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.order-sub{
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.confirm-order{
+    font-size: 1.02rem;
+    padding: 10px;
+    color: white;
+    background-image: linear-gradient(to left, rgb(0,110,225),rgb(0,110,225));
+    border: none;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.confirm-order:hover{
+    cursor: pointer;
+    /* background-image: linear-gradient(to left, rgb(0,110,225),rgb(159, 206, 255)); */
+    letter-spacing: 2px;
+    scale: 1.03;
+}
+
+
+/* Footer of the page */
+
+footer{
+    gap: 20px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    color: white;
+    padding-block: 40px;
+    gap: 50px;
+}
+
+.upper-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20%;
+}
+.upper-footer div li{
+    list-style: none;
+}
+.upper-footer div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+.upper-footer div li:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+.lower-footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.lower-footer h2{
+    font-size: 2rem;
+}
+.social-media{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width:990px) {
+    .input-entry{
+        display: none;
+    }
+    .categories-locatebar{
+        justify-content: left;
+        width: 100%;
+    }
+    .categories-locatebar ul li{
+        display: none;
+    }
+    .categories-locatebar ul{
+        width: 100%;
+        display: flex;
+        justify-content: left;
+    }
+    .navigate-in{
+        display: block;
+        padding-left: 40px;
+    }
+    .WhishListButton{
+        display: none;
+    }
+
+    .banner-desc {
+        text-align: center;
+        padding: 50px;
+        font-size: 2rem;
+        color: white;
+        font-weight: bold;
+    }
+    .cartImage{
+        background-image: url(Images/8093572.jpg);
+        height: 400px;
+        width: 100%;
+        background-size: 130%;
+        background-position: center;
+        background-position: -50px 40px;
+        position:fixed;
+        top: 0;
+        margin-top: 155px;
+        z-index: -10;
+    }
+    .cart-detailswithpic{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-left: 5px;
+    }
+    .item-quantity{
+        align-self: flex-end;
+    }
+
+}
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-inline: 10px;
+    top: 15%; 
+    width: 100%; 
+    text-align: left; 
+    margin-top: 30px;
+  }
+
+  .overlay a{
+    padding: 8px;
+    text-decoration: none;
+    min-width: 100px;
+    flex-shrink: 0;
+    margin-inline: 10px;
+    font-size: 2rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay-content li a {
+    padding: 8px;
+    text-decoration: none;
+    min-width: 100px;
+    flex-shrink: 0;
+    margin-inline: 10px;
+    font-size: 1.2rem;
+    border-bottom: .2px solid rgba(245, 245, 245, 0.473);
+    color: #818181;
+    display: block; 
+    transition: 0.3s; 
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    margin-left: 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
